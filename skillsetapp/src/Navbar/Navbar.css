@@ -1,0 +1,61 @@
+/* Navbar container styling */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0d253f; /* Navy blue background */
+    color: #ffffff; /* White text */
+    font-family: Arial, sans-serif;
+}
+
+/* Site title styling */
+.nav .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f4a261; /* Light orange for title */
+    text-decoration: none;
+}
+
+/* Unordered list (ul) styling */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link (a) styling inside CustomLink */
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav ul li a:hover {
+    color: #f4a261; /* Matches site title color */
+}
+
+/* Active link styling */
+.nav ul li.active a {
+    border-bottom: 2px solid #f4a261;
+    padding-bottom: 2px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav ul li {
+        margin-bottom: 0.5rem;
+    }
+}

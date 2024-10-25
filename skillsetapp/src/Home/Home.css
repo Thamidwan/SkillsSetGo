@@ -1,0 +1,29 @@
+/* Home.css */
+
+.banner {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 35vh; /* Makes the div take full viewport height */
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(211, 211, 211, 0.5); 
+    border: 2px solid #e0e0e0; /* Adds a light gray border */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1250px;
+    margin:0 auto; /* Optional: light background color */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace; /* Sets h1 to Courier New */
+    font-size: 2rem;
+    color: #333333;
+}
+
+p {
+    margin-top: 1rem; /* Adds space above the paragraph */
+    font-size: 1rem; /* Optional: adjust font size */
+    color: #555555; /* Optional: change text color for contrast */
+}
