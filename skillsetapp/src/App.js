@@ -13,7 +13,7 @@ function App() {
   let Component;
   switch (window.location.pathname.toLowerCase()) {
     case "/":
-      Component = <Home />;
+      Component = <Skills />;
       break;
 
     case "/login":
