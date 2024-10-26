@@ -3,73 +3,348 @@ import './Skills.css'
 
 function Skills() {
     return (
-<<<<<<< HEAD
-        <div class="contain">
-            <div class="">
-                <h1>Master In-Demand Skills Today</h1>
-                <p>"Sed ut perspiciatis unde omnis iste
-                 natus error sit voluptatem accusantium 
-                 doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore 
-                  veritatis et quasi architecto beatae 
-                  vitae dicta sunt explicabo. Nemo enim ipsam 
-                  voluptatem quia voluptas sit aspernatur 
-                  aut odit aut fugit, sed quia consequuntur
-                  magni dolores eos qui ratione</p>
-            </div>
-            <div>
-                
+        <div className="skillsDiv">
+        <h1>
+        Explore Our Courses
+       </h1>
+       <p>
+        Discover a variety of courses designed to help you develop essential skills for personal and professional growth. Whether you're looking to improve your communication, time management, or leadership abilities, we have a course for you.
+       </p>
+       <div class="results">
+        Results (78)
+       </div>
+       <div class="course-grid">
+        <div class="course-card">
+         <img alt="Effective Communication Skills" height="150" src="https://storage.googleapis.com/a1aa/image/ImB3LJ1jT7ZQAFeeyt8Lwf6BTDLE7c6vhbedxwe5ZnQqWPVdC.jpg" width="300"/>
+         <div class="course-content">
+          <div>
+           <span class="course-badge">
+            Beginner
+           </span>
+           <span class="course-badge">
+            Soft Skill
+           </span>
+          </div>
+          <div class="course-title">
+           Effective Communication Skills
+          </div>
+          <div class="course-provider">
+           SkillUp
+          </div>
+          <div class="course-meta">
+           <div>
+            5 hours
            </div>
-            <div class="table-container">
-                <table>
-                    <tr>
-                        <td>Fundamental of Software skills</td>
-                        <td>Introduction to trending technologies</td>
-                        <td>Tutorials in web development</td>
-                    </tr>
-                    <tr>
-                        <td><button class="blue-button">Explore more</button></td>
-                        <td><button class="blue-button">Beginner's Level</button></td>
-                        <td><button class="blue-button">Beginner's Level</button></td>
-                    </tr>
-                </table>
-=======
-        <div class="container">
-            <div class="header">
-                <h1>Master In-Demand Skills Today</h1>
-            </div>
-            <div class="paragraph">
-                <p>The information that is needed according to this screenshot. Unfortunately I don't understand the language and therefore I cannot put anything here.</p>
-            </div>
-            {/* <div class="table-container">
-                <div class="outer">
-                    <div>
-                        <p>Fundmental of Software skills</p>
-                        <p>Introduction to trending technologies</p>
-                        <p>Tutorials in web development</p>
-                    </div>
-                    <div>
-                        <button>Explore more</button>
-                        <button>Beginner's Level</button>
-                        <button>Beginner's Level</button>
-                    </div>
-                </div>
-            </div> */}
-
-            <div class="containing">
-                <div class="contentz">
-                    <div class="item">Fundamental of Software skills</div>
-                    <div class="item">Introduction to trending technologies</div>
-                    <div class="item">Tutorials in web development</div>
-                </div>
-                <div class="buttons">
-                    <button class="blue-button">Explore more</button>
-                    <button class="blue-button">Beginner's Level</button>
-                    <button class="blue-button">Beginner's Level</button>
-                </div>
->>>>>>> 9e0109bed51853bc9f29e79d175b25dff407bd58
-            </div>
+           <div class="rating">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star-half-alt">
+            </i>
+            <span>
+             (1.2k+)
+            </span>
+           </div>
+          </div>
+          <div class="course-details">
+           Learn how to communicate effectively in both personal and professional settings.
+          </div>
+         </div>
+         <div class="course-actions">
+          <div class="wishlist">
+           <i class="far fa-heart">
+           </i>
+          </div>
+          <button class="view-course">
+           View Course
+          </button>
+          <button class="enroll">
+           Enroll
+          </button>
+         </div>
         </div>
+        <div class="course-card">
+         <img alt="Time Management Mastery" height="150" src="https://storage.googleapis.com/a1aa/image/e3wvTJ5luoUCLatWAAWapfXO1zaP5xiLdrEVCnTZqdk36pqTA.jpg" width="300"/>
+         <div class="course-content">
+          <div>
+           <span class="course-badge">
+            Intermediate
+           </span>
+           <span class="course-badge">
+            Soft Skill
+           </span>
+          </div>
+          <div class="course-title">
+           Time Management Mastery
+          </div>
+          <div class="course-provider">
+           ProductivityPro
+          </div>
+          <div class="course-meta">
+           <div>
+            8 hours
+           </div>
+           <div class="rating">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <span>
+             (2.3k+)
+            </span>
+           </div>
+          </div>
+          <div class="course-details">
+           Master the art of time management to increase productivity and achieve your goals.
+          </div>
+         </div>
+         <div class="course-actions">
+          <div class="wishlist">
+           <i class="far fa-heart">
+           </i>
+          </div>
+          <button class="view-course">
+           View Course
+          </button>
+          <button class="enroll">
+           Enroll
+          </button>
+         </div>
+        </div>
+        <div class="course-card">
+         <img alt="Leadership and Team Building" height="150" src="https://storage.googleapis.com/a1aa/image/3MSShdxJGfWDBCYM965wfxbsYF5LsEH3Leia11D0VUws1TVnA.jpg" width="300"/>
+         <div class="course-content">
+          <div>
+           <span class="course-badge">
+            Advanced
+           </span>
+           <span class="course-badge">
+            Soft Skill
+           </span>
+          </div>
+          <div class="course-title">
+           Leadership and Team Building
+          </div>
+          <div class="course-provider">
+           LeadPro
+          </div>
+          <div class="course-meta">
+           <div>
+            10 hours
+           </div>
+           <div class="rating">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <span>
+             (3.1k+)
+            </span>
+           </div>
+          </div>
+          <div class="course-details">
+           Develop leadership skills and learn how to build and manage effective teams.
+          </div>
+         </div>
+         <div class="course-actions">
+          <div class="wishlist">
+           <i class="far fa-heart">
+           </i>
+          </div>
+          <button class="view-course">
+           View Course
+          </button>
+          <button class="enroll">
+           Enroll
+          </button>
+         </div>
+        </div>
+        <div class="course-card">
+         <img alt="Critical Thinking and Problem Solving" height="150" src="https://storage.googleapis.com/a1aa/image/lBqJaUFJ6dapMd4dkQD2CHXgRYkxEWBtaI9cbvCOG3WueU1JA.jpg" width="300"/>
+         <div class="course-content">
+          <div>
+           <span class="course-badge">
+            Beginner
+           </span>
+           <span class="course-badge">
+            Soft Skill
+           </span>
+          </div>
+          <div class="course-title">
+           Critical Thinking and Problem Solving
+          </div>
+          <div class="course-provider">
+           ThinkSmart
+          </div>
+          <div class="course-meta">
+           <div>
+            6 hours
+           </div>
+           <div class="rating">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star-half-alt">
+            </i>
+            <span>
+             (1.8k+)
+            </span>
+           </div>
+          </div>
+          <div class="course-details">
+           Enhance your critical thinking and problem-solving skills to tackle challenges effectively.
+          </div>
+         </div>
+         <div class="course-actions">
+          <div class="wishlist">
+           <i class="far fa-heart">
+           </i>
+          </div>
+          <button class="view-course">
+           View Course
+          </button>
+          <button class="enroll">
+           Enroll
+          </button>
+         </div>
+        </div>
+        <div class="course-card">
+         <img alt="Emotional Intelligence" height="150" src="https://storage.googleapis.com/a1aa/image/pumWsf9xeahL6EDOEyCzCEXC8KOEDNFQe8zw75hWfVxOrnqOB.jpg" width="300"/>
+         <div class="course-content">
+          <div>
+           <span class="course-badge">
+            Intermediate
+           </span>
+           <span class="course-badge">
+            Soft Skill
+           </span>
+          </div>
+          <div class="course-title">
+           Emotional Intelligence
+          </div>
+          <div class="course-provider">
+           EQMastery
+          </div>
+          <div class="course-meta">
+           <div>
+            7 hours
+           </div>
+           <div class="rating">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <span>
+             (2.5k+)
+            </span>
+           </div>
+          </div>
+          <div class="course-details">
+           Improve your emotional intelligence to better understand and manage your emotions and relationships.
+          </div>
+         </div>
+         <div class="course-actions">
+          <div class="wishlist">
+           <i class="far fa-heart">
+           </i>
+          </div>
+          <button class="view-course">
+           View Course
+          </button>
+          <button class="enroll">
+           Enroll
+          </button>
+         </div>
+        </div>
+        <div class="course-card">
+         <img alt="Negotiation Skills" height="150" src="https://storage.googleapis.com/a1aa/image/8kuszRvvqareJaGrGEZeYFxLCifV4HImGCIaZN5C5P111TVnA.jpg" width="300"/>
+         <div class="course-content">
+          <div>
+           <span class="course-badge">
+            Advanced
+           </span>
+           <span class="course-badge">
+            Soft Skill
+           </span>
+          </div>
+          <div class="course-title">
+           Negotiation Skills
+          </div>
+          <div class="course-provider">
+           NegotiatePro
+          </div>
+          <div class="course-meta">
+           <div>
+            9 hours
+           </div>
+           <div class="rating">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star-half-alt">
+            </i>
+            <span>
+             (3.0k+)
+            </span>
+           </div>
+          </div>
+          <div class="course-details">
+           Learn the art of negotiation to achieve better outcomes in both personal and professional settings.
+          </div>
+         </div>
+         <div class="course-actions">
+          <div class="wishlist">
+           <i class="far fa-heart">
+           </i>
+          </div>
+          <button class="view-course">
+           View Course
+          </button>
+          <button class="enroll">
+           Enroll
+          </button>
+         </div>
+        </div>
+       </div>
+       <div class="more-courses">
+        <button>
+         More Courses
+        </button>
+       </div>
+       </div>
     )
 }
 
