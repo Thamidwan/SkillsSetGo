@@ -32,7 +32,7 @@ function Login() {
         />
       </div>
     </div><br></br><br></br>
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br>    <Footer />
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>    <Footer />
     </>
   );
 }

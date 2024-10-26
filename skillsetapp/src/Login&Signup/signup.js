@@ -113,8 +113,8 @@ function Signup() {
           />
         </div>
       </div>
-      <br /><br />
-      <Footer />
+      <br /><br /><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><Footer />
     </>
   );
 }
