@@ -1,0 +1,49 @@
+
+
+/* Copied their style */
+
+.container {
+    background-color: white;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+
+/* My style */
+
+
+.header {
+    justify-content: center;
+    align-items: center;
+}
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.blue-button:hover {
+    background-color: darkblue;
+}
