@@ -1,100 +1,74 @@
-/* Home.css */
-
-.banner {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 35vh; /* Makes the div take full viewport height */
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(211, 211, 211, 0.5); 
-    border: 2px solid #e0e0e0; /* Adds a light gray border */
-    border-radius: 8px;
-    width: 80%;
-    max-width: 1250px;
-    margin:0 auto; /* Optional: light background color */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace; /* Sets h1 to Courier New */
-    font-size: 2rem;
-    color: #333333;
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
 p {
-    margin-top: 1rem; /* Adds space above the paragraph */
-    font-size: 1rem; /* Optional: adjust font size */
-    color: #555555; /* Optional: change text color for contrast */
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  max-width: 800px;
+  line-height: 1.5;
 }
 
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-.banner {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0; /* Adjust as needed */
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff; /* Primary color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .content-container {
-    display: flex;
-    justify-content: space-around; /* Adjust spacing */
-    margin: 20px 0;
-  }
-  
-  .content {
-    background-color: #fff; /* Box background */
-    border: 1px solid #ddd; /* Box border */
-    border-radius: 8px;
-    padding: 20px;
-    width: 30%; /* Adjust width as needed */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    text-align: center; /* Center text */
-  }
-  
-  .content h2 {
-    margin-bottom: 10px;
-  }
-  
-  .content p {
-    font-size: 14px;
-  }
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
 
-  
-  .button-container {
-    margin: 20px auto; /* Center the buttons and add margin */
-    text-align: center; /* Center align buttons */
-  }
-  
-  .cta-button, .explore-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 10px; /* Space between buttons */
-  }
-  
-  .cta-button {
-    background-color: #0d253f; /* Primary color for Join Now */
-    color: white;
-  }
-  
-  .explore-button {
-    background-color: #0d253f; /* Secondary color for Explore More */
-    color: white;
-  }
-  
-  .cta-button:hover, .explore-button:hover {
-    opacity: 0.8; /* Add hover effect */
-  }
-  
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.card-content i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card .fa-arrow-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  color: white;
+}
