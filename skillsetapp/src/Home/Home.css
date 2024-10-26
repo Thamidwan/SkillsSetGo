@@ -1,100 +1,150 @@
-/* Home.css */
+/* General reset for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Use a consistent font */
+}
 
+/* Banner styling */
 .banner {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 35vh; /* Makes the div take full viewport height */
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(165, 33, 33, 0.5); 
-    border: 2px solid white; /* Adds a light gray border */
-    border-radius: 8px;
-    width: 80%;
-    max-width: 1250px;
-    margin:0 auto; /* Optional: light background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh; /* Takes full viewport height */
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(165, 33, 33, 0.5);
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 1250px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Add some padding */
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace; /* Sets h1 to Courier New */
-    font-size: 2rem;
-    color: #333333;
+/* Content container styling */
+.content-container {
+  display: flex;
+  justify-content: space-around; /* Space out content sections */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin: 20px 0; /* Space above and below */
 }
 
-p {
-    margin-top: 1rem; /* Adds space above the paragraph */
-    font-size: 1rem; /* Optional: adjust font size */
-    color: #555555; /* Optional: change text color for contrast */
+/* Individual content section styling */
+.content {
+  flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 300px; /* Limit width */
+  margin: 20px; /* Space around content */
+  padding: 20px; /* Padding inside content */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Button container styling */
+.button-container {
+  text-align: center; /* Center buttons */
+  margin: 40px 0; /* Space around buttons */
+}
 
-.banner {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0; /* Adjust as needed */
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff; /* Primary color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+/* Button styling */
+.cta-button, .explore-button {
+  padding: 10px 20px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  margin: 0 10px; /* Space between buttons */
+}
+
+.cta-button {
+  background-color: #0d253f; /* Primary color */
+  color: white; /* Text color */
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.explore-button {
+  background-color: #0d253f; /* Secondary color */
+  color: white; /* Text color */
+}
+
+.explore-button:hover {
+  background-color: #0d253f; /* Darker green on hover */
+}
+
+/* Card styling */
+.cards {
+  display: flex;
+  justify-content: center; /* Center cards */
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  margin: 20px 0; /* Space around cards */
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  width: 300px; /* Fixed width */
+  position: relative; /* Relative positioning for content */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.card-content {
+  position: absolute; /* Absolute positioning for content */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center content */
+  text-align: center;
+  color: white; /* Text color */
+}
+
+.card-content i {
+  font-size: 3em; /* Icon size */
+  margin-bottom: 10px; /* Space below icon */
+}
+
+.card-content h3 {
+  font-size: 1.5em; /* Heading size */
+  margin: 0; /* Remove default margin */
+}
+
+/* Footer styling (if not already included in Footer.css) */
+.footerr {
+  background-color: #0d253f; /* Dark background */
+  color: white; /* Text color */
+  padding: 20px 0; /* Vertical padding */
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Space above footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
   .content-container {
-    display: flex;
-    justify-content: space-around; /* Adjust spacing */
-    margin: 20px 0;
+    flex-direction: column; /* Stack content sections vertically */
+    align-items: center; /* Center align */
   }
   
   .content {
-    background-color: #fff; /* Box background */
-    border: 1px solid #ddd; /* Box border */
-    border-radius: 8px;
-    padding: 20px;
-    width: 30%; /* Adjust width as needed */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    text-align: center; /* Center text */
+    max-width: 100%; /* Allow full width on small screens */
   }
   
-  .content h2 {
-    margin-bottom: 10px;
+  .cards {
+    flex-direction: column; /* Stack cards vertically on small screens */
   }
-  
-  .content p {
-    font-size: 14px;
-  }
-
-  
-  .button-container {
-    margin: 20px auto; /* Center the buttons and add margin */
-    text-align: center; /* Center align buttons */
-  }
-  
-  .cta-button, .explore-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0 10px; /* Space between buttons */
-  }
-  
-  .cta-button {
-    background-color: #0d253f; /* Primary color for Join Now */
-    color: white;
-  }
-  
-  .explore-button {
-    background-color: #0d253f; /* Secondary color for Explore More */
-    color: white;
-  }
-  
-  .cta-button:hover, .explore-button:hover {
-    opacity: 0.8; /* Add hover effect */
-  }
-  
+}

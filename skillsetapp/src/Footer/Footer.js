@@ -2,8 +2,8 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-content">
+    <footer className="footerr">
+      <div className="footer-cont">
         <p>&copy; {new Date().getFullYear()} SkillSetGo. All rights reserved.</p>
         <ul className="footer-links">
           <li><a href="/about">About Us</a></li>

@@ -1,57 +1,60 @@
-/* Assuming you have a wrapper around your main content */
+/* General reset for the footer */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-     /* Full height for body and html */
-  }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    /* Ensure the wrapper takes at least full viewport height */
-  }
-  
-  .banner {
-    flex: 0 0 auto; /* Allow banner to take only its content size */
-  }
-  
-  .content-container {
-    flex: 1; /* Allow content to grow and fill the available space */
-  }
-  
-  .footer {
-    background-color: #0d253f; /* Dark background */
-    color: white; /* Text color */
-    padding: 20px 0; /* Vertical padding */
-    text-align: center;
-    margin-bottom: 0;
-  }
-  
-  .footer-content {
-    max-width: 1200px; /* Limit width */
-    margin: 0 auto; /* Center align */
-    padding: 0 20px; /* Horizontal padding */
-  }
-  
-  .footer-links {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 10px 0 0; /* Margin adjustments */
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer styling */
+.footerr {
+  background-color: #0d253f; /* Dark background */
+  color: white; /* Text color */
+  padding: 20px 0; /* Vertical padding */
+  text-align: center; /* Center text */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Container for footer content */
+.footer-cont {
+  max-width: 1200px; /* Limit width */
+  margin: 0 auto; /* Center align */
+  padding: 0 20px; /* Horizontal padding */
+}
+
+/* Footer paragraph styling */
+.footer-cont p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Footer links styling */
+.footer-links {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 10px 0 0; /* Adjust margins */
+}
+
+/* Footer links item styling */
+.footer-links li {
+  display: inline; /* Inline list items */
+  margin: 0 15px; /* Spacing between links */
+}
+
+/* Footer links anchor styling */
+.footer-links a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for links */
+.footer-links a:hover {
+  color: #f0a500; /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
   .footer-links li {
-    display: inline; /* Inline list items */
-    margin: 0 15px; /* Spacing between links */
+    display: block; /* Stack links vertically on small screens */
+    margin: 5px 0; /* Adjust spacing */
   }
-  
-  .footer-links a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+}
