@@ -2,13 +2,15 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* Full height for body and html */
+    height: 100%;
+     /* Full height for body and html */
   }
   
   .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the wrapper takes at least full viewport height */
+    min-height: 100vh; 
+    /* Ensure the wrapper takes at least full viewport height */
   }
   
   .banner {

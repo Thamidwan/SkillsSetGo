@@ -28,7 +28,7 @@ function Home() {
         <button className="cta-button">Join Now</button>
         <button className="explore-button">Explore More</button>
       </div><br></br><br></br>
-      <br></br> <br></br><br></br>     <Footer />
+      <br></br> <br></br><br></br><br></br> <br></br> <br></br> <Footer />
     </>
   );
 }

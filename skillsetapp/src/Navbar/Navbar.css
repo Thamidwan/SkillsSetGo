@@ -7,6 +7,9 @@
     background-color: #0d253f; /* Navy blue background */
     color: #ffffff; /* White text */
     font-family: Arial, sans-serif;
+    position: fixed;
+    width:97%;
+    
 }
 
 /* Site title styling */

@@ -8,8 +8,8 @@
     height: 35vh; /* Makes the div take full viewport height */
     text-align: center;
     background-color: white;
-    box-shadow: 0 4px 10px rgba(211, 211, 211, 0.5); 
-    border: 2px solid #e0e0e0; /* Adds a light gray border */
+    box-shadow: 0 4px 10px rgba(165, 33, 33, 0.5); 
+    border: 2px solid white; /* Adds a light gray border */
     border-radius: 8px;
     width: 80%;
     max-width: 1250px;

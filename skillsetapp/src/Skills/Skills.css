@@ -1,67 +1,189 @@
+/* Skills.css */
 
-.contain {
-    background-color: white;
-    padding: 80px;
+.contai {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.hea {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hea h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hea p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.table-container {
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-.header {
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-.paragraph {
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-
-
-.containing {
-    display: flex;
-    justify-content: space-between; /* Aligns content to the left and buttons to the right */
-    align-items: center; /* Centers items vertically */
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    margin-left: 20%;
-}
-
-.contentz {
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    margin-left: 15%;
+.cont {
+    flex: 1;
 }
 
 .item {
-    padding: 15px;
-    text-align: left; /* Aligns text to the left */
-    margin-bottom: 10px; /* Adds space between items */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Stacks buttons vertically */
-    align-items: flex-start; /* Aligns buttons to the right */
-    margin-right: 15%;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .blue-button {
-    background-color: #0d253f;
+    background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px;
-    cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 10px; /* Adds space between buttons */
-    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .blue-button:hover {
-    background-color: darkblue;
+    background-color: #0056b3;
+}
+
+.skillsDiv {
+    margin-top: 40px;
+}
+
+.skillsDiv h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skillsDiv p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.results {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+}
+
+.course-content {
+    padding: 15px;
+}
+
+.course-badge {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.course-provider {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.course-details {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.course-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.wishlist {
+    cursor: pointer;
+}
+
+.view-course,
+.enroll {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-course:hover,
+.enroll:hover {
+    background-color: #218838;
+}
+
+.more-courses {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-courses button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.more-courses button:hover {
+    background-color: #0056b3;
 }

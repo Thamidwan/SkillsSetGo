@@ -1,4 +1,5 @@
 import React from 'react';
+import { dynamoDB } from '../awsConfig' // Adjust the path as needed
 import './login&Sign.css';
 import Footer from '../Footer/Footer';
 function Login() {
