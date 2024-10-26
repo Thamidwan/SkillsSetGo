@@ -1,6 +1,6 @@
 import { Children } from "react";
 import './Navbar.css'
-import Login from "../Login/Login";
+import Login from "../Login&Signup/login";
 export default function Navbar() {
     const path = window.location.pathname;
     return (

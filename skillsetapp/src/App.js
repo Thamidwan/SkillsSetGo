@@ -1,16 +1,13 @@
 import React from 'react';
 import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
-<<<<<<< HEAD
-import Login from './Login/Login';
-
+import Signup from './Login&Signup/signup';
+import Login from './Login&Signup/login';
 import './App.css';
-=======
 
 
 import './App.css';
 
->>>>>>> 8acfae8c2fab5ea4ae3455e0ceaf1df3e0a728da
 function App() {
   let Component;
   switch (window.location.pathname.toLowerCase()) {
@@ -20,6 +17,10 @@ function App() {
 
     case "/login":
       Component = <Login /> 
+      break;
+
+    case "/signup":
+      Component = <Signup /> 
       break;
 
     default:
