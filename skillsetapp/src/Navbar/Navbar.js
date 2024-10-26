@@ -1,5 +1,6 @@
 import { Children } from "react";
 import './Navbar.css'
+import Login from "../Login/Login";
 export default function Navbar() {
     const path = window.location.pathname;
     return (
@@ -9,7 +10,7 @@ export default function Navbar() {
                 <CustomLink href="/home">Home</CustomLink>
                 <CustomLink href="/about">About</CustomLink>
                 <CustomLink href="/testimonial">Testimonial</CustomLink>
-                <CustomLink href="/ussd">login</CustomLink>
+                <CustomLink href="/Login">login</CustomLink>
             </ul>
         </nav>
     );
