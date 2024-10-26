@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Signup from './Login&Signup/signup';
 import Login from './Login&Signup/login';
 import Skills from './Skills/Skills';
+import AdminPage from './Home/AdminPage';
 import './App.css';
 
 
@@ -26,6 +27,10 @@ function App() {
     
     case "/skills":
       Component = <Skills /> 
+      break;
+
+    case "/admin":
+      Component = <AdminPage /> 
       break;
 
 
