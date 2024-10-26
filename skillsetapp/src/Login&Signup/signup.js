@@ -1,9 +1,11 @@
 import React from 'react'
 import './login&Sign.css'
+import Footer from '../Footer/Footer'
 
-function signup() {
+function Signup() {
   return (
-    <div class="container">
+    <>
+    <div class="containerrr">
     <div class="signup-form">
      <h2>
       Sign Up
@@ -15,8 +17,9 @@ function signup() {
      <button>
       Sign Up
      </button>
-     <a href="#">
-      Already have an account? Login
+     Already have an account?
+     <a href="/login">
+       Login
      </a>
     </div>
     <div class="divider">
@@ -24,8 +27,10 @@ function signup() {
     <div class="image-container">
      <img alt="Illustration of a job portal with various job categories and a person searching for jobs" height="200" src="https://storage.googleapis.com/a1aa/image/qWsa9ONIwC7fOaelTKa4qBxh8XYjJoIxf7Ur6JV8H6eEgYqOB.jpg" width="200"/>
     </div>
-   </div>
+   </div><br></br><br></br>
+   <br></br><br></br><br></br><br></br><br></br><br></br>    <Footer />
+   </>
   )
 }
 
-export default signup
+export default Signup

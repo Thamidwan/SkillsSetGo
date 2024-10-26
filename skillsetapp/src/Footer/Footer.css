@@ -1,0 +1,55 @@
+/* Assuming you have a wrapper around your main content */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height for body and html */
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes at least full viewport height */
+  }
+  
+  .banner {
+    flex: 0 0 auto; /* Allow banner to take only its content size */
+  }
+  
+  .content-container {
+    flex: 1; /* Allow content to grow and fill the available space */
+  }
+  
+  .footer {
+    background-color: #0d253f; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limit width */
+    margin: 0 auto; /* Center align */
+    padding: 0 20px; /* Horizontal padding */
+  }
+  
+  .footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0 0; /* Margin adjustments */
+  }
+  
+  .footer-links li {
+    display: inline; /* Inline list items */
+    margin: 0 15px; /* Spacing between links */
+  }
+  
+  .footer-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
