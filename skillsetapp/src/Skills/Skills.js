@@ -3,13 +3,22 @@ import './Skills.css'
 
 function Skills() {
     return (
-        <div class="container">
-            <div class="header">
-                <h2>Master In-Demand Skills Today</h2>
+        <div class="contain">
+            <div class="">
+                <h1>Master In-Demand Skills Today</h1>
+                <p>"Sed ut perspiciatis unde omnis iste
+                 natus error sit voluptatem accusantium 
+                 doloremque laudantium, totam rem aperiam,
+                  eaque ipsa quae ab illo inventore 
+                  veritatis et quasi architecto beatae 
+                  vitae dicta sunt explicabo. Nemo enim ipsam 
+                  voluptatem quia voluptas sit aspernatur 
+                  aut odit aut fugit, sed quia consequuntur
+                  magni dolores eos qui ratione</p>
             </div>
             <div>
-                <p>The information that is needed according to this screenshot. Unfortunately I don't understand the language and therefore I cannot put anything here.</p>
-            </div>
+                
+           </div>
             <div class="table-container">
                 <table>
                     <tr>

@@ -1,19 +1,11 @@
 
-
-/* Copied their style */
-
-.container {
+.contain {
     background-color: white;
     padding: 80px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
 }
-
-
-
-/* My style */
-
 
 .header {
     justify-content: center;
