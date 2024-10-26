@@ -3,6 +3,7 @@ import Home from './Home/Home';
 import Navbar from './Navbar/Navbar';
 import Signup from './Login&Signup/signup';
 import Login from './Login&Signup/login';
+import Skills from './Skills/Skills';
 import './App.css';
 
 
@@ -12,7 +13,7 @@ function App() {
   let Component;
   switch (window.location.pathname.toLowerCase()) {
     case "/":
-      Component = <Home />;
+      Component = <Skills />;
       break;
 
     case "/login":
