@@ -59,6 +59,15 @@ function Skills() {
                             level: "Intermediate",
                             details: "Master the art of time management to increase productivity and achieve your goals."
                         },
+                        {
+                            title: "Group Engagement",
+                            provider: "ProductivityPro",
+                            duration: "6 hours",
+                            rating: "5.3k+",
+                            imgSrc: "https://storage.googleapis.com/a1aa/image/e3wvTJ5luoUCLatWAAWapfXO1zaP5xiLdrEVCnTZqdk36pqTA.jpg",
+                            level: "Intermediate",
+                            details: "Master the art of group management to increase productivity and achieve your goals."
+                        },
                         // Add more courses here...
                     ].map((course, index) => (
                         <div className="course-card" key={index}>
