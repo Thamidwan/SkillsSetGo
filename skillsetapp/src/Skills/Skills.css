@@ -44,11 +44,12 @@
 }
 
 .blue-button {
-    background-color: #007bff;
+    background-color: #0d253f;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
+    width: 120px;
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -155,7 +156,7 @@
 
 .view-course,
 .enroll {
-    background-color: #28a745;
+    background-color: #0d253f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -166,7 +167,7 @@
 
 .view-course:hover,
 .enroll:hover {
-    background-color: #218838;
+    background-color: #0d253f;
 }
 
 .more-courses {
@@ -175,7 +176,7 @@
 }
 
 .more-courses button {
-    background-color: #007bff;
+    background-color: #0d253f;
     color: white;
     border: none;
     border-radius: 5px;
