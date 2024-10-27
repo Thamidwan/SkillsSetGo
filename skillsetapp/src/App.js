@@ -5,6 +5,7 @@ import Signup from './Login&Signup/signup';
 import Login from './Login&Signup/login';
 import Skills from './Skills/Skills';
 import AdminPage from './Home/AdminPage';
+import About from './About/About';
 import './App.css';
 
 
@@ -19,6 +20,10 @@ function App() {
 
     case "/login":
       Component = <Login /> 
+      break;
+
+    case "/about":
+      Component = <About /> 
       break;
 
     case "/signup":

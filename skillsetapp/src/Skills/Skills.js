@@ -19,8 +19,8 @@ function Skills() {
 
             <div className="table-container">
                 <div className="cont">
-                    <div className="item">Fundamental of Software Skills</div>
-                    <div className="item">Introduction to Trending Technologies</div>
+                  <br></br>  <div className="item">Fundamental of Software Skills</div><br></br><br></br>
+                    <div className="item">Introduction to Trending Technologies</div><br></br><br></br>
                     <div className="item">Tutorials in Web Development</div>
                 </div>
                 <div className="buttons">

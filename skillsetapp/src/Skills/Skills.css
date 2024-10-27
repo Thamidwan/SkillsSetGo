@@ -10,6 +10,14 @@
 .hea {
     text-align: center;
     margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(165, 33, 33, 0.5);
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1250px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
 }
 
 .hea h1 {
