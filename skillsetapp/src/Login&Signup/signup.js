@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './login&Sign.css';
 import Footer from '../Footer/Footer';
-import Swal from 'sweetalert2'; // Import SweetAlert
-
+import Swal from 'sweetalert2';
 
 function Signup() {
   const [fullName, setFullName] = useState('');
@@ -29,7 +28,11 @@ function Signup() {
     };
 
     try {
+<<<<<<< HEAD
       const response = await post('http://localhost/register.php', {
+=======
+      const response = await fetch('http://localhost/Register/register.php', {
+>>>>>>> c8d97959792ccdbbddbff3319cd9d1e06e3748b3
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -45,8 +48,10 @@ function Signup() {
           title: 'Success!',
           text: data.message,
         });
-        // Optionally redirect to login page
-        // window.location.href = '/login';
+        // Redirect to login page after successful registration
+        setTimeout(() => {
+          window.location.href = '/login'; // Adjust path as needed
+        }, 2000);
       } else {
         Swal.fire({
           icon: 'error',
@@ -63,6 +68,7 @@ function Signup() {
       });
     }
   };
+
   return (
     <>
       <div className="containerrr">
@@ -105,15 +111,15 @@ function Signup() {
         <div className="divider"></div>
         <div className="image-container">
           <img
-            alt="Illustration of a job portal with various job categories and a person searching for jobs"
+            alt="Illustration of a job portal"
             height="200"
             src="https://storage.googleapis.com/a1aa/image/qWsa9ONIwC7fOaelTKa4qBxh8XYjJoIxf7Ur6JV8H6eEgYqOB.jpg"
             width="200"
           />
         </div>
       </div>
-      <br /><br /><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><Footer />
+      <br /><br /><br />
+      <Footer />
     </>
   );
 }
