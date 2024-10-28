@@ -29,7 +29,7 @@ function Signup() {
     };
 
     try {
-      const response = await fetch('http://localhost/register.php', {
+      const response = await post('http://localhost/register.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
